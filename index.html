@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Trivia</title>
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Trivia</h1>
+      <p>Learning becomes easier and more enjoyable with our interactive features.</p>
+      <img src="images/mainlogo.png" alt="App Illustration" style="width: 300px; height: auto;"/>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Education App. All rights reserved.</p>
+
+  </footer>
+  
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Special Promo!</h2>
+      <p>Get a ZO% discount for registrations this week!</p>
+      <p>Never stop being happy, have a nice day</p>
+    </div>
+  </div>
+  
+  <script>
+    window.onload = function() {
+      document.getElementById("popup").style.display = "block";
+    };
+  
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>

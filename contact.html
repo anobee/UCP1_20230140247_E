@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Your message has been sent!");
+      document.getElementById("contactForm").reset();
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Registration Form</h2>
+      <form id="contactForm" onsubmit="submitForm(event)">
+        <label for="name">Name:</label><br/>
+        <input type="text" id="name" name="name" required /><br/><br/>
+
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" required /><br/><br/>
+
+        <label for="interest">What are you searching for?:</label><br/>
+        <select id="interest" name="interest">
+          <option value="programming">Serenity</option>
+          <option value="design">Peace</option>
+          <option value="marketing">No Enemies</option>
+        </select><br/><br/>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2025 Education App. All rights reserved.</p>
+  </footer>
+</body>
+</html>
